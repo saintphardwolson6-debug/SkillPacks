@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ff0048, #000);
+}
+
+.logo {
+  width: 90px;
+  border-radius: 50%;
+  animation: float 3s infinite ease-in-out;
+}
+
+/* ===== SECTION ===== */
+#about, #packs {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== PACKS ===== */
+.pack {
+  background: #181818;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pack:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 0, 72, 0.3);
+}
+
+/* ===== BUTTON ANIMATION ===== */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff0048, #ff6600);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transition: left 0.4s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 0, 72, 0.4);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 20px;
+  background-color: #111;
+  font-size: 14px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ===== APPARITION AU SCROLL ===== */
+.scroll-appear {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-appear.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
