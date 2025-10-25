@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkillPacks | Mini ebooks & Ressources digitales</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkillPacks — Accueil</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-theme="dark">
+  <!-- Canvas animation full-screen -->
+  <canvas id="bg-canvas"></canvas>
 
-  <header class="scroll-appear">
-    <img src="images/logo.png" alt="SkillPacks Logo" class="logo">
-    <h1>SkillPacks by Tchoulo</h1>
-    <p>Des mini ebooks. De grandes idées. Pour le monde entier 🌍</p>
+  <nav class="nav">
+    <div class="brand">
+      <img src="images/logo.png" alt="SkillPacks" class="logo"/>
+      <span>SkillPacks</span>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">☀️/🌙</button>
+      <a href="ebooks.html" class="nav-link">Ebooks</a>
+      <a href="templates.html" class="nav-link">Templates</a>
+      <a href="about.html" class="nav-link">À propos</a>
+    </div>
+  </nav>
+
+  <header class="hero scroll-appear">
+    <h1>Mini-ebooks. Actions rapides. Impact global.</h1>
+    <p class="subtitle">Des SkillPacks concis pour apprendre vite et gagner plus — disponibles en USD.</p>
+
+    <div class="hero-ctas">
+      <a href="ebooks.html" class="btn btn-neon scroll-appear">Découvrir les Ebooks</a>
+      <a href="templates.html" class="btn btn-neon outline scroll-appear">Explorer les Templates</a>
+      <a href="about.html" class="btn btn-neon scroll-appear">Vendre un Pack</a>
+    </div>
   </header>
 
-  <section id="about" class="scroll-appear">
-    <h2>À propos</h2>
-    <p><b>SkillPacks</b> est une collection de mini-ebooks et de ressources digitales pour t’aider à apprendre vite et passer à l’action.  
-    Tous nos produits sont disponibles dans le monde entier 🌎.</p>
-  </section>
+  <main class="container">
+    <section class="intro scroll-appear">
+      <h2>Pourquoi SkillPacks ?</h2>
+      <p>Des guides courts (5–15 pages) — pratiques, actionnables et vendables. Parfait pour créer du revenu digital depuis ton téléphone.</p>
+    </section>
 
-  <section id="packs">
-    <h2 class="scroll-appear">📚 Packs Populaires</h2>
+    <section class="preview scroll-appear">
+      <h2>Packs populaires</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Sigma Mindset</h3>
+          <p>7 routines pour devenir inarrêtable.</p>
+          <div class="card-actions">
+            <a href="ebook1.html" class="btn btn-small btn-neon">Voir le pack</a>
+            <a href="https://gumroad.com/votre-lien" target="_blank" class="btn btn-small outline">Acheter – $10</a>
+          </div>
+        </article>
 
-    <div class="pack scroll-appear">
-      <h3>🔥 Sigma Mindset – 7 routines pour devenir inarrêtable</h3>
-      <p>Apprends à construire une discipline solide et un mental d’élite.</p>
-      <a href="https://gumroad.com/votre-lien" target="_blank" class="btn scroll-appear">Acheter – $10</a>
-    </div>
+        <article class="card">
+          <h3>10 outils d'IA — $100/mo</h3>
+          <p>Outils pratiques pour générer un revenu automatique.</p>
+          <div class="card-actions">
+            <a href="#" class="btn btn-small btn-neon">Voir le pack</a>
+            <a href="https://gumroad.com/votre-lien" target="_blank" class="btn btn-small outline">Acheter – $12</a>
+          </div>
+        </article>
 
-    <div class="pack scroll-appear">
-      <h3>💰 10 Outils d’IA pour générer $100/mois</h3>
-      <p>Découvre les meilleurs outils d’IA pour créer des revenus automatiques.</p>
-      <a href="https://gumroad.com/votre-lien" target="_blank" class="btn scroll-appear">Acheter – $12</a>
-    </div>
+        <article class="card">
+          <h3>Secrets TikTok</h3>
+          <p>Stratégies concrètes pour croitre vite.</p>
+          <div class="card-actions">
+            <a href="#" class="btn btn-small btn-neon">Voir le pack</a>
+            <a href="https://gumroad.com/votre-lien" target="_blank" class="btn btn-small outline">Acheter – $8</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <div class="pack scroll-appear">
-      <h3>🎬 Secrets de Croissance TikTok</h3>
-      <p>Apprends les vraies stratégies pour grandir rapidement sur TikTok.</p>
-      <a href="https://gumroad.com/votre-lien" target="_blank" class="btn scroll-appear">Acheter – $8</a>
-    </div>
-  </section>
-
-  <footer class="scroll-appear">
-    <p>© 2025 SkillPacks by Tchoulo | 
-      <a href="https://tiktok.com/@skillpacks.tchoulo" target="_blank">TikTok</a> |
-      <a href="#">Contact</a>
-    </p>
+  <footer class="footer scroll-appear">
+    <p>© 2025 SkillPacks by Tchoulo • Prix en USD • <a href="https://tiktok.com/@skillpacks.tchoulo" target="_blank">TikTok</a></p>
   </footer>
 
   <script src="script.js"></script>
